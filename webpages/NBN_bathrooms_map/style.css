@@ -1,0 +1,748 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/************* NAV BAR **************/
+
+.nav-bar {
+    z-index: 1000;
+    background-color: transparent;
+    padding: 17px 10px 50px 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 1vh;
+    transition-duration: 1s;
+}
+
+.logo {
+    display: inline;
+    align-items: center;
+    position: relative;
+}
+
+.logo-image {
+    grid-area: content;
+    float: left;
+    background-color: transparent;
+}
+
+.nav-bar a {
+    fill: black; /* only change this if nbn nav logo is on a dark background -- if so, change to white */
+    transition-duration: 1s;
+}
+
+.nav-bar a:hover {
+    fill: #313131; /* only change this if nbn nav logo is on a dark background -- if so, change to #ECECEC */
+    transition-duration: 0s;
+}
+
+/* NAV BAR ON SCROLL */
+
+.nav-bar-scroll {
+    background-color: white;
+    filter: drop-shadow(0 1px 1px rgb(0,0,0,.5));
+}
+
+
+/************* HEADER (HED, DEK, BYLINE) **************/
+
+.article-top-content {
+    margin-top: 15vh;
+    padding-left: 30%;
+    padding-right: 30%;
+    text-align: center;
+}
+
+.article-section {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: black; /* Change to match the color of the section --
+                    PREGAME: #3F56A5
+                    DANCEFLOOR: #647754
+                    FEATURES: #C58181
+                    PHOTO STORY: #668D87
+                    HANGOVER: #01C0C1 */
+}
+
+.article-hed {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 55px;
+    margin-bottom: 0;
+    line-height: 1.1em;
+}
+
+.article-dek {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    margin-top: 15px;
+    line-height: 1.1em;
+}
+
+.article-byline {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.byline-link {
+    color: black;
+    text-decoration: none;
+}
+
+.byline-link:hover {
+    color: #313131;
+    font-weight: 400;
+}
+
+
+/************* BODY TEXT **************/
+
+.article-body {
+    text-align: left;
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+    font-family: 'PT serif', serif;
+    font-size: 19px;
+    line-height: 1.6em; 
+}
+
+.article-body > p {
+    margin-bottom: 20px;
+}
+
+.description-text{
+    background-color: black ; 
+    padding: 1px; 
+    border: 1px solid black;
+    margin-left: 40%;
+    margin-right: 40%;
+    background-color:white;
+    padding-top: 2%;
+    padding-bottom: auto;
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+}
+
+
+/**** DROP CAP - you can change color / font if needed ****/
+
+.drop-cap:first-child:first-letter {
+    color: black;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 600;
+    font-size: 55px;
+    float: left;
+    line-height: 48px;
+    margin-top: 10px;
+    padding-right: 8px;
+}
+
+/******GRID********/
+
+#container {
+    display: grid;
+    background-size: cover;
+    background-image: url("map.jpg");
+    width: 700px;
+    height: 800px;
+    border: 1px solid black;
+    grid-template-columns: 1fr 1.5fr .5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.5fr;
+    grid-template-rows: 2fr .5fr 1.5fr 1.5fr 2fr;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Tech {
+    grid-column: 5 / span 4;
+    grid-row: 1 / span 1;
+    opacity: 0%;
+    cursor: pointer;
+} 
+
+#Tech:hover, #Tech:focus {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+#Kellogg {
+    grid-column: 10/ span 2;
+    grid-row: 1 / span 1;
+    opacity: 0%;
+}   
+
+#Kellogg:hover, #Kellogg:focus {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+#Lunt {
+    grid-column: 6 / span 3;
+    grid-row: 3 / span 1;
+    opacity: 0%;
+}   
+
+#Lunt:hover, #Lunt:focus {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+#Norris {
+    grid-column: 10 / span 2;
+    grid-row: 4 / span 1;
+    opacity: 0%;
+}   
+
+#Norris:hover, #Norris:focus {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+#Main {
+    grid-column: 7 / span 3;
+    grid-row: 4 / span 1;
+    opacity: 0%;
+}   
+
+
+#Main:hover, #Main:focus {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+#Harris {
+    grid-column: 6 / span 2;
+    grid-row: 5 / span 1;
+    opacity: 0%;
+}   
+
+#Harris:hover, #Harris:focus {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+#Lutkin {
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 1;
+    opacity: 0%;
+}   
+
+#Lutkin:hover, #Lutkin:focus {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+#MFC {
+    grid-column: 8 / span 3;
+    grid-row: 5 / span 1;
+    opacity: 0%;
+}   
+
+#MFC:hover, #MFC:focus {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+#Shepard {
+    grid-column: 3 / span 3;
+    grid-row: 5 / span 1;
+    opacity: 0%;
+}   
+
+#Shepard:hover, #Shepard:focus {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+
+/************* POP UPS **************/
+
+.modalHarris, .modalLutkin, .modalLunt, .modalKellogg, .modalNorris, .modalMain, .modalMFC, .modalShepard, .modalTech {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+
+  #HarrisModalImage, #LutkinModalImage, #LuntModalImage, #KelloggModalImage, #NorrisModalImage, #MainModalImage, #MFCModalImage, 
+  #ShepardModalImage, #TechModalImage {
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}  
+
+  /* Harris POP-UP*/
+
+.modal-contentHarris {
+    background-color: #fefefe;
+    margin: 7% 28% auto; 
+    padding: 20px;
+    border: 5px solid #ecd188;
+    width: 50%; 
+  }
+  
+/* Lutkin POP-UP*/
+
+  
+.modal-contentLutkin {
+    background-color: #fefefe;
+    margin: 7% 28% auto; 
+    padding: 20px;
+    border: 5px solid #e4ac82;
+    width: 50%; 
+  }
+
+  /* Lunt POP-UP*/
+
+  
+.modal-contentLunt {
+    background-color: #fefefe;
+    margin: 7% 28% auto; 
+    padding: 20px;
+    border: 5px solid #bac493;
+    width: 50%; 
+  }
+
+/* Kellogg POP-UP*/
+
+  
+.modal-contentKellogg {
+    background-color: #fefefe;
+    margin: 7% 28% auto; 
+    padding: 20px;
+    border: 5px solid  #d4cbe4;
+    width: 50%; 
+  }
+
+
+/* Norris POP-UP*/
+
+  
+.modal-contentNorris {
+    background-color: #fefefe;
+    margin: 7% 28% auto; 
+    padding: 20px;
+    border: 5px solid  #dc8181;
+    width: 50%; 
+  }
+
+  /* Main POP-UP*/
+
+  
+.modal-contentMain {
+    background-color: #fefefe;
+    margin: 7% 28% auto; 
+    padding: 20px;
+    border: 5px solid  #dc8181;
+    width: 50%; 
+  }
+
+  /* MFC POP-UP*/
+
+  
+.modal-contentMFC {
+    background-color: #fefefe;
+    margin: 7% 28% auto; 
+    padding: 20px;
+    border: 5px solid  #dc8181;
+    width: 50%; 
+  }
+
+  /* Shepard POP-UP*/
+
+  
+.modal-contentShepard {
+    background-color: #fefefe;
+    margin: 7% 28% auto; 
+    padding: 20px;
+    border: 5px solid  #dc8181;
+    width: 50%; 
+  }
+
+  /* Tech POP-UP*/
+
+.modal-contentTech {
+    background-color: #fefefe;
+    margin: 7% 28% auto; 
+    padding: 20px;
+    border: 5px solid  #dc8181;
+    width: 50%; 
+  }
+
+
+  .closeHarris, .closeLutkin, .closeLunt, .closeKellogg, .closeNorris, .closeMain, .closeMFC, .closeShepard, .closeTech {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeHarris:hover, .closeHarris:focus, .closeLutkin:hover, .closeLutkin:focus, 
+  .closeLunt:hover, .closeLunt:focus, .closeKellogg:hover, .closeKellogg:focus,
+  .closeNorris:hover, .closeNorris:focus, .closeMain:hover, .closeMain:focus,
+  .closeMFC:hover, .closeMFC:focus, .closeShepard:hover, .closeShepard:focus,
+  .closeTech:hover, .closeTech:focus, {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/*********** PULLQUOTE ************/
+
+.pullquote {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.pullquote p {
+    font-size: 32px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.pullquote cite {
+    font-size: 19px;
+    font-family: 'Assistant', sans-serif;
+}
+
+
+/************* IMAGES ***************/
+
+.image {
+    margin: 3% 30%;
+}
+
+.image img {
+    width: 40vw;
+    height: auto;
+}
+
+.image p {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    font-style: italic;
+}
+
+
+/************* CREDITS **************/
+
+hr {
+    margin-left: 38%;
+    margin-right: 38%;
+    margin-top: 5vh;
+}
+
+.article-credits {
+    text-align: center;
+    padding-left: 28%;
+    padding-right: 28%;
+    font-family: 'Assistant', sans-serif;
+    text-transform: uppercase;
+    margin-top: 3vh;
+    line-height: 1.2em;
+    color: black;
+}
+
+.credits-heading {
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.credits-subhed {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.credits-item {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+/**** FOOTER NAVIGATION - don't worry about this, I'll add the right links/text for you ****/
+
+.magazine-navigation {
+    display: flex;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 5vh;
+    margin-top: 9vh;
+}
+
+.magazine-navigation a {
+    color: black;
+    text-decoration: none;
+}
+
+.magazine-navigation a:hover {
+    color: #313131;
+}
+
+.magazine-navigation > h2 {
+    width: 50%;
+    font-size: 25px;
+}
+
+.article-link {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 25px;
+}
+
+.left {
+    text-align: left;
+    padding-right: 2%;
+}
+
+.right {
+    text-align: right;
+    padding-right: 2%;
+}
+
+.footer-info {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.footer-info a {
+    color: black;
+}
+
+.footer-info a:hover {
+    color: #313131;
+}
+
+
+/************* MOBILE STYLING **************/
+/* add any mobile-specific CSS here but please leave what's here now
+(unless there's a specific thing that needs to change based on your design)! */
+
+@media screen and (max-width: 900px){
+    .navbar{
+        height: 5vh;
+    }
+    .article-top-content {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .article-hed{
+        font-size: 3em;
+    }
+    .article-dek{
+        font-size: 1.5em;
+    }
+    .article-byline{
+        font-size: 1em;
+    }
+    .article-body > p {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .pullquote {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .pullquote p {
+        font-size: 27px;
+    }
+    .image {
+        margin: 8% 10%;
+    }
+    .image img {
+        width: 80vw;
+    }
+    hr {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    .article-credits {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .magazine-navigation {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    /**** ADD MORE BELOW ****/
+
+@media screen and (max-width: 1100px){
+    header {
+        display: block;
+    }
+    
+    .article-top-content {
+        margin-top: 0vh;
+    }
+
+    .article-hed {
+        padding-top: 150px;
+    }
+
+
+    .article-body {
+        text-align: left;
+        padding-left: 28%;
+        padding-right: 28%;
+    }
+
+    #Lutkin, #Tech, #Lunt, #Kellogg, #Norris, #Main, #MFC, #Shepard {
+        opacity: 100%;
+    }   
+
+    #container {
+        width: 400px;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        
+    }
+
+    .border{
+        padding-right: auto;
+        padding-left: auto;
+    }
+
+    .description-text{
+        background-color: black ; 
+        padding: 1px; 
+        border: 1px solid black;
+        background-color:white;
+        padding-top: 2%;
+        padding-bottom: auto;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+    .navbar{
+        height: 5vh;
+    }
+    .article-top-content {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .article-hed{
+        font-size: 3em;
+    }
+    .article-dek{
+        font-size: 1.5em;
+    }
+    .article-byline{
+        font-size: 1em;
+    }
+    .article-body{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .pullquote {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .article-credits {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #Lutkin, #Tech, #Lunt, #Kellogg, #Norris, #Main, #MFC, #Shepard{
+        opacity: 100%;
+    }   
+
+    #container {
+        width: 400px;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .modal-contentLutkin, .modal-contentTech, .modal-contentLunt, .modal-contentKellogg, .modal-contentNorris, 
+    .modal-contentMain, .modal-contentMFC, .modal-contentShepard{
+        margin: 10% 5% auto; 
+        padding: 20px;
+        width: 80%;
+    }
+    
+    .closeLutkin, .closeTech, .closeLunt, .closeKellogg, .closeNorris, .closeMain, .closeMFC, .closeShepard{
+        color: black;
+        font-size: 70px;
+    }
+
+
+    .description-text{
+        background-color: black ; 
+        padding: 1px; 
+        border: 1px solid black;
+        margin-left: 40%;
+        background-color:white;
+        padding-top: 3%;
+        padding-bottom: 2%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+}
+
+@media screen and (max-width: 300px){
+
+    #Lutkin, #Tech, #Lunt, #Kellogg, #Norris, #Main, #MFC, #Shepard{
+        opacity: 100%;
+    }  
+
+    #container {
+        width: 300px;
+        height: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .modal-contentLutkin, .modal-contentTech, .modal-contentLunt, .modal-contentKellogg, .modal-contentNorris, 
+    .modal-contentMain, .modal-contentMFC, .modal-contentShepard{
+        margin: 20% 5% auto; 
+        padding: 20px;
+        width: 80%;
+    } 
+
+    .closeLutkin, .closeTech, .closeLunt, .closeKellogg, .closeNorris, .closeMain, .closeMFC, .closeShepard{
+        margin-bottom: 50px;
+    }
+
+    .description-text{
+        background-color: black ; 
+        padding: 1px; 
+        border: 1px solid black;
+        margin-left: 40%;
+        background-color:white;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    }
+}

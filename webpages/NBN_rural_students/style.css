@@ -1,0 +1,357 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/************* NAV BAR **************/
+
+.nav-bar {
+    z-index: 1000;
+    background-color: transparent;
+    padding: 17px 10px 50px 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 1vh;
+    transition-duration: 1s;
+}
+
+.logo {
+    display: inline;
+    align-items: center;
+    position: relative;
+}
+
+.logo-image {
+    grid-area: content;
+    float: left;
+    background-color: transparent;
+}
+
+.nav-bar a {
+    fill: black; /* only change this if nbn nav logo is on a dark background -- if so, change to white */
+    transition-duration: 1s;
+}
+
+.nav-bar a:hover {
+    fill: #313131; /* only change this if nbn nav logo is on a dark background -- if so, change to #ECECEC */
+    transition-duration: 0s;
+}
+
+/* NAV BAR ON SCROLL */
+
+.nav-bar-scroll {
+    background-color: white;
+    filter: drop-shadow(0 1px 1px rgb(0,0,0,.5));
+}
+
+
+/************* HEADER (HED, DEK, BYLINE) **************/
+
+.article-top-content {
+    margin-top: 15vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+.article-section {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: black; /* Change to match the color of the section --
+                    PREGAME: #3F56A5
+                    DANCEFLOOR: #647754
+                    FEATURES: #C58181
+                    PHOTO STORY: #668D87
+                    HANGOVER: #01C0C1 */
+}
+
+.article-hed {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 55px;
+    margin-bottom: 0;
+    line-height: 1.1em;
+}
+
+.article-dek {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    margin-top: 15px;
+    line-height: 1.1em;
+}
+
+.article-byline {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.byline-link {
+    color: black;
+    text-decoration: none;
+}
+
+.byline-link:hover {
+    color: #313131;
+    font-weight: 400;
+}
+
+
+/************* BODY TEXT **************/
+
+.article-body {
+    text-align: left;
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+    font-family: 'PT serif', serif;
+    font-size: 19px;
+    line-height: 1.6em;
+}
+
+.article-body > p {
+    margin-bottom: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+
+/**** DROP CAP - you can change color / font if needed ****/
+
+.drop-cap:first-child:first-letter {
+    color: black;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 600;
+    font-size: 55px;
+    float: left;
+    line-height: 48px;
+    margin-top: 10px;
+    padding-right: 8px;
+}
+
+/*********** PULLQUOTE ************/
+
+.pullquote {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.pullquote p {
+    font-size: 32px;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.pullquote cite {
+    font-size: 19px;
+    font-family: 'Assistant', sans-serif;
+}
+
+
+/************* IMAGES ***************/
+
+.image {
+    margin: 3% 30%;
+}
+
+.image img {
+    width: 40vw;
+    height: auto;
+}
+
+.image p {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    font-style: italic;
+}
+
+
+/************* CREDITS **************/
+
+hr {
+    margin-left: 38%;
+    margin-right: 38%;
+    margin-top: 5vh;
+}
+
+.article-credits {
+    text-align: center;
+    padding-left: 28%;
+    padding-right: 28%;
+    font-family: 'Assistant', sans-serif;
+    text-transform: uppercase;
+    margin-top: 3vh;
+    line-height: 1.2em;
+    color: black;
+}
+
+.credits-heading {
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.credits-subhed {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.credits-item {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+/**** FOOTER NAVIGATION - don't worry about this, I'll add the right links/text for you ****/
+
+.magazine-navigation {
+    display: flex;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 5vh;
+    margin-top: 9vh;
+}
+
+.magazine-navigation a {
+    color: black;
+    text-decoration: none;
+}
+
+.magazine-navigation a:hover {
+    color: #313131;
+}
+
+.magazine-navigation > h2 {
+    width: 50%;
+    font-size: 25px;
+}
+
+.article-link {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 25px;
+}
+
+.left {
+    text-align: left;
+    padding-right: 2%;
+}
+
+.right {
+    text-align: right;
+    padding-right: 2%;
+}
+
+.footer-info {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.footer-info a {
+    color: black;
+}
+
+.footer-info a:hover {
+    color: #313131;
+}
+
+/************* FIXED IMAGE **************/
+
+#left-column{
+    width: 15vw; 
+    height: 100%;
+    float: left; 
+    position: fixed; 
+}
+
+#right-column{
+    width: 15vw; 
+    height: 100%;
+    float: right; 
+    position: fixed; 
+    padding-left: 85%;
+}
+
+/************* MOBILE STYLING **************/
+/* add any mobile-specific CSS here but please leave what's here now
+(unless there's a specific thing that needs to change based on your design)! */
+
+@media screen and (max-width: 900px){
+    .navbar{
+        height: 5vh;
+    }
+    .article-top-content {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .article-hed{
+        font-size: 3em;
+    }
+    .article-dek{
+        font-size: 1.5em;
+    }
+    .article-byline{
+        font-size: 1em;
+    }
+    .article-body > p {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .pullquote {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .pullquote p {
+        font-size: 27px;
+    }
+    .image {
+        margin: 8% 10%;
+    }
+    .image img {
+        width: 80vw;
+    }
+    hr {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    .article-credits {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .magazine-navigation {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    /* .wrapper{ */
+        /* display: block;
+        place-items: center; */
+    /* } */
+
+    .grid-container {
+        grid-template-columns: 1fr;
+      }
+
+    #left-column {
+        display: none;
+      }
+
+      #right-column {
+        display: none;
+      }
+      
+
+}
